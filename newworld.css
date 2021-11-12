@@ -8,5 +8,21 @@ html {
 body {
   font-family: helvetica;
   min-height: 100%;
-  background-image: url(./Bilder/catworld.jpeg);
+  background-image: url(./Bilder/alienplanet.jpeg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.balto {
+  position: absolute;
+  height: 20rem;
+  bottom: 0;
+}
+
+.mushroom {
+  position: absolute;
+  height: 15rem;
+  bottom: 0;
+  right: 0;
+  margin-right: 4rem;
 }
