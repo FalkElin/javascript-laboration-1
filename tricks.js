@@ -2,7 +2,7 @@
 window.onload = main
 
 
-const RightAnswers = ["mus", "råtta"]
+const RightAnswers = ["death"]
 
 function main(){
     addEventListeners();
@@ -12,27 +12,32 @@ function main(){
 function addEventListeners() {
 const catFace = document.getElementById("catFace")
 catFace.onclick = AnswerQuestion;
+document.getElementById("catFace").style.cursor = "pointer";
 
 const bollen = document.getElementById("bollen")
 bollen.onclick = showCatText
+document.getElementById("bollen").style.cursor = "pointer";
 }
 
 
 function AnswerQuestion() {
-    const searchTerm = prompt("Gåta")
-
+    const searchTerm = prompt("If you killed a cat in ancient Egypt, even by accident, what punishment did you face?")
+    
     let isanswerFound = false;
 
     for (const answer of RightAnswers){
        if (answer === searchTerm) {
        isanswerFound = true;
-       alert("rätt")
+       alert("RIGHT!")
+       
+
        break;
        }
     }
 
     if (!isanswerFound) {
-        alert("fel")
+        alert("WRONG, TRY AGAIN!")
+        AnswerQuestion()
     }
 
 }
