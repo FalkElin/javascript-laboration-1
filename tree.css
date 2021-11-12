@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body main {
+  font-family: helvetica;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/Bilder/trippyforest.jpeg);
+  background-size: cover;
+}
+
+.träd {
+  height: 68rem;
+  width: auto;
+}
+
+.crazycat {
+  position: absolute;
+  height: 6rem;
+  padding-bottom: 21rem;
+  padding-left: 4rem;
+}
+
+.bollen {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  height: 25rem;
+}
+
+.crazyCatText {
+  position: absolute;
+  border-top-left-radius: 7rem;
+  border-top-right-radius: 7rem;
+  border-bottom-left-radius: 7rem;
+  border: solid rgb(245, 183, 102);
+  background-color: rgba(50, 20, 187, 0.795);
+  color: azure;
+  padding: 4rem;
+  font-weight: 100;
+  top: 10rem;
+  left: 20rem;
+}
+
+.text {
+  position: absolute;
+  border-top-left-radius: 7rem;
+  border-top-right-radius: 7rem;
+  border-bottom-left-radius: 7rem;
+  border: solid rgb(245, 183, 102);
+  width: 20rem;
+  background-color: rgba(50, 20, 187, 0.795);
+  padding: 4rem;
+  color: azure;
+  font-weight: 100;
+  top: 7rem;
+  left: 5rem;
+  display: none;
+}

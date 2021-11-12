@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: helvetica;
+  min-height: 100%;
+  color: rgb(190, 218, 35);
+  background-color: rgb(30, 75, 50);
+  overflow: hidden;
+}
+
+/* REUSABLE STYLES BELOW*/
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-right {
+  justify-content: right;
+}
+.justify-left {
+  justify-content: left;
+}
+.grow {
+  flex: 1;
+}
+.column {
+  flex-direction: column;
+}
+.fullwidth {
+  width: 100%;
+}
+.textaligncenter {
+  text-align: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.flex-row {
+  flex-direction: row;
+}
+
+/* POTION AND MAIN STYLES BELOW*/
+
+main {
+  height: 30rem;
+  margin-top: 10rem;
+}
+
+.dryck {
+  width: auto;
+  height: 15rem;
+  margin: 3.5rem;
+}
+
+.textdiv {
+  text-shadow: 5px 5px 10px rgb(93, 14, 146);
+}
+
+.fadein {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.slidein {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.kanin {
+  animation-name: dot;
+  animation: dot 20s infinite;
+  position: relative;
+  height: 10rem;
+  width: auto;
+}
+
+@keyframes dot {
+  0% {
+    top: 100px;
+    left: 200px;
+  }
+  25% {
+    top: 730px;
+    left: 200px;
+  }
+  50% {
+    top: 730px;
+    left: 1400px;
+  }
+  75% {
+    top: 100px;
+    left: 1400px;
+  }
+  100% {
+    top: 100px;
+    left: 200px;
+  }
+}
+
+.changebody {
+  animation-name: colorchange;
+  animation: colorchange 10s infinite;
+}
+
+@keyframes colorchange {
+  0% {
+    background-color: rgb(17, 221, 170);
+  }
+  25% {
+    background-color: rgb(36, 197, 57);
+  }
+  50% {
+    background-color: rgb(224, 56, 224);
+  }
+  75% {
+    background-color: rgb(226, 28, 44);
+  }
+  100% {
+    background-color: rgb(223, 211, 45);
+  }
+}
