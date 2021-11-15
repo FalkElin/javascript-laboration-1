@@ -21,11 +21,12 @@ body main {
   width: auto;
 }
 
-.crazycat {
+.secretDoor {
   position: absolute;
   height: 6rem;
   padding-bottom: 21rem;
   padding-right: 6rem;
+  opacity: 0;
 }
 
 .bollen {
@@ -37,17 +38,17 @@ body main {
 
 .crazyCatText {
   position: absolute;
-  border-top-left-radius: 7rem;
-  border-top-right-radius: 7rem;
-  border-bottom-left-radius: 7rem;
+  border-radius: 4rem;
   border: solid rgb(245, 183, 102);
   background-color: rgba(50, 20, 187, 0.795);
   color: azure;
-  padding: 4rem;
-  font-weight: 100;
+  padding: 2rem;
+  font-weight: 200;
+  font-size: 2rem;
   top: 10rem;
-  left: 20rem;
+  left: 5rem;
   display: block;
+  width: 25rem;
 }
 
 .text {
@@ -59,10 +60,12 @@ body main {
   width: 23rem;
   background-color: rgba(50, 20, 187, 0.795);
   padding: 4rem;
+  bottom: 0;
   color: azure;
   font-weight: 100;
-  top: 7rem;
-  left: 5rem;
+  left: 0;
+  margin-bottom: 19rem;
+  margin-left: 15rem;
   display: none;
 }
 

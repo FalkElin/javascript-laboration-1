@@ -11,6 +11,7 @@ body {
   background-image: url(./Bilder/mushy.jpeg);
   background-position: bottom;
   background-size: cover;
+  overflow: hidden;
 }
 
 .balto {
@@ -20,10 +21,20 @@ body {
   left: 0;
 }
 
-.mushroom {
+.luna {
   position: absolute;
-  height: 15rem;
-  bottom: 0;
-  right: 0;
-  margin-right: 4rem;
+  height: 30rem;
+  bottom: -7rem;
+  right: -5rem;
+}
+
+.bollen {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 10rem;
+  background-color: rgb(63, 165, 63);
+  border-radius: 1rem;
+  border: solid white;
+  margin: 1rem;
 }

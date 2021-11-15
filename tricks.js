@@ -2,7 +2,7 @@
 window.onload = main
 
 
-const RightAnswers = ["death"]
+const RightAnswers = ["4"]
 
 function main(){
     addEventListeners();
@@ -10,9 +10,9 @@ function main(){
 
 
 function addEventListeners() {
-const catFace = document.getElementById("catFace")
-catFace.onclick = AnswerQuestion;
-document.getElementById("catFace").style.cursor = "pointer";
+const secretDoor = document.getElementById("secretDoor")
+secretDoor.onclick = AnswerQuestion;
+document.getElementById("secretDoor").style.cursor = "pointer";
 
 const bollen = document.getElementById("bollen")
 bollen.onclick = showCatText
@@ -21,14 +21,14 @@ document.getElementById("bollen").style.cursor = "pointer";
 
 
 function AnswerQuestion() {
-    const searchTerm = prompt("If you killed a cat in ancient Egypt, even by accident, what punishment did you face?")
+    const searchTerm = prompt("I ett fyrkantigt rum finns en katt i varje hörn av rummet. Framför varje katt finns 3 katter. Hur många katter finns det i rummet? Svara i siffor.")
     
     let isanswerFound = false;
 
     for (const answer of RightAnswers){
        if (answer === searchTerm) {
        isanswerFound = true;
-       alert("thats right!")
+       alert("Korrekt!")
        
 
        break;
@@ -36,7 +36,7 @@ function AnswerQuestion() {
     }
 
     if (!isanswerFound) {
-        alert("wrong! Try again!")
+        alert("Fel, testa igen!")
         AnswerQuestion()
     }
 
