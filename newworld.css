@@ -33,8 +33,24 @@ body {
   left: 0;
   position: absolute;
   height: 10rem;
-  background-color: rgb(63, 165, 63);
+  background-color: rgb(103, 75, 206);
   border-radius: 1rem;
   border: solid white;
   margin: 1rem;
+}
+
+.form {
+  position: absolute;
+  top: 0;
+  margin-left: 11rem;
+  margin-top: 3rem;
+  background-color: rgb(66, 23, 219);
+  padding: 1rem;
+  color: white;
+  border: solid white;
+  border-radius: 1rem;
+}
+
+.form div {
+  padding: 0.7rem;
 }
