@@ -49,8 +49,12 @@ body {
   color: white;
   border: solid white;
   border-radius: 1rem;
+  display: none;
 }
-
 .form div {
   padding: 0.7rem;
+}
+
+.kitten {
+  display: none;
 }

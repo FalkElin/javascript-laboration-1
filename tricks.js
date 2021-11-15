@@ -29,8 +29,6 @@ function AnswerQuestion() {
        if (answer === searchTerm) {
        isanswerFound = true;
        alert("Korrekt!")
-       
-
        break;
        }
     }
