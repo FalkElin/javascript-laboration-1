@@ -28,7 +28,7 @@ function AnswerQuestion() {
     for (const answer of RightAnswers){
        if (answer === searchTerm) {
        isanswerFound = true;
-       alert("RIGHT!")
+       alert("thats right!")
        
 
        break;
@@ -36,7 +36,7 @@ function AnswerQuestion() {
     }
 
     if (!isanswerFound) {
-        alert("WRONG, TRY AGAIN!")
+        alert("wrong! Try again!")
         AnswerQuestion()
     }
 

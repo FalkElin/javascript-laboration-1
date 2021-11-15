@@ -8,7 +8,7 @@ html {
 body {
   font-family: helvetica;
   min-height: 100%;
-  background-image: url(./Bilder/alienplanet.jpeg);
+  background-image: url(./Bilder/mushy.jpeg);
   background-position: bottom;
   background-size: cover;
 }
@@ -17,6 +17,7 @@ body {
   position: absolute;
   height: 20rem;
   bottom: 0;
+  left: 0;
 }
 
 .mushroom {
