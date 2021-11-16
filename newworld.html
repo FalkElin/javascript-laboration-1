@@ -9,17 +9,31 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="" class="form" method="get" id="solutionForm">
-      <h1>Vilken katt är skyldig?</h1>
-      <div>
-        <label for="svar">Svara</label>
-        <input type="text" id="svar" name="svar" />
-      </div>
-      <button id="btn" type="submit">Bekräfta svar</button>
-    </form>
-    <img class="bollen" id="bollen" src="/Bilder/bollen.png" alt="" />
-    <img class="balto" src="./Bilder/balto.png" alt="" />
-    <img class="luna" src="./Bilder/luna.png" alt="" />
-    <img id="kitten" class="kitten" src="./Bilder/luna.png" alt="" />
+    <div
+      id="kittendiv"
+      class="flex justify-center align-center column kittendiv"
+    >
+      <h1>Du har hittat kattungen! Vi är evigt tacksamma.</h1>
+      <img class="kitten" src="./Bilder/baltokitten.png" alt="" />
+    </div>
+    <main>
+      <form class="form" id="solutionForm">
+        <h1>Vilken katt är skyldig?</h1>
+        <div>
+          <label>Svara</label>
+          <input type="text" id="svar" />
+        </div>
+        <button id="btn" type="button">Bekräfta svar</button>
+      </form>
+
+      <img class="bollen" id="bollen" src="/Bilder/bollen.png" alt="" />
+      <img class="balto" src="./Bilder/balto.png" alt="" />
+      <img class="luna" src="./Bilder/luna.png" alt="" />
+      <img class="bollen2" src="./Bilder/bollen2.png" alt="" />
+      <img class="moses" src="./Bilder/moses.png" alt="" />
+      <button class="music-button" id="music-button">
+        Spela stämnningsmusik
+      </button>
+    </main>
   </body>
 </html>

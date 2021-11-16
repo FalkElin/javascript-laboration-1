@@ -5,6 +5,48 @@
 html {
   height: 100%;
 }
+
+/* REUSABLE STYLES BELOW*/
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-right {
+  justify-content: right;
+}
+.justify-left {
+  justify-content: left;
+}
+.grow {
+  flex: 1;
+}
+.column {
+  flex-direction: column;
+}
+.fullwidth {
+  width: 100%;
+}
+.text-align-center {
+  text-align: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.flex-row {
+  flex-direction: row;
+}
+.padding {
+  padding: 1rem;
+}
+
 body {
   font-family: helvetica;
   min-height: 100%;
@@ -13,7 +55,9 @@ body {
   background-size: cover;
   overflow: hidden;
 }
-
+main {
+  display: flex;
+}
 .balto {
   position: absolute;
   height: 20rem;
@@ -36,7 +80,31 @@ body {
   background-color: rgb(103, 75, 206);
   border-radius: 1rem;
   border: solid white;
-  margin: 1rem;
+  margin-top: 3rem;
+}
+
+.moses {
+  position: absolute;
+  height: 7rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 12rem;
+  padding-right: 5rem;
+  display: flex;
+  font-size: 1rem;
+}
+
+.bollen2 {
+  height: 15rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 5rem;
+  margin: auto;
+  display: flex;
 }
 
 .form {
@@ -56,5 +124,31 @@ body {
 }
 
 .kitten {
-  display: none;
+  height: 25rem;
+}
+
+.kittendiv {
+  height: 100vh;
+  width: 100%;
+  background-color: cadetblue;
+  visibility: hidden;
+}
+
+.music-button {
+  background-color: rgb(255, 13, 154);
+  padding: 0.4rem;
+  border: solid rgb(110, 0, 101);
+  border-radius: 1rem;
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0.3rem;
+  font-size: 1rem;
+  position: absolute;
+}
+
+.music-button:hover {
+  color: rgb(174, 0, 255);
+  cursor: pointer;
 }

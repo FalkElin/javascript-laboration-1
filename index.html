@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
+    <script src="/index.js"></script>
   </head>
   <body class="changebody">
+    <img class="error" id="error" src="/Bilder/error404-not-found.gif" />
     <img class="kanin" src="./Bilder/kanin.png" alt="" />
     <main>
-      <div class="textdiv slidein flex align-center column">
-        <h1>Welcome, you are expected</h1>
-        <h2>Please choose the red or blue potion</h2>
+      <div class="textdiv slidein flex align-center text-align-center column">
+        <h1 class="padding">Är du redo för att träda in i en ny värld?</h1>
+        <h2>
+          Om svaret är ja väljer du den lila drycken.<br />Om svaret är nej
+          väljer du den orangea drycken och återgår till ditt vanliga liv.
+        </h2>
       </div>
       <div class="potiondiv fadein flex align-center justify-center">
-        <img class="dryck" src="./Bilder/guldryck.png" alt="" />
+        <img id="orange" class="dryck" src="./Bilder/guldryck.png" alt="" />
         <a id="dryck2" href="/tree.html"
           ><img class="dryck" src="./Bilder/liladryck.png" alt=""
         /></a>

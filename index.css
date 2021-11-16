@@ -8,7 +8,7 @@ html {
 body {
   font-family: helvetica;
   min-height: 100%;
-  color: rgb(190, 218, 35);
+  color: rgb(0, 248, 227);
   background-color: rgb(30, 75, 50);
   overflow: hidden;
 }
@@ -41,7 +41,7 @@ body {
 .fullwidth {
   width: 100%;
 }
-.textaligncenter {
+.text-align-center {
   text-align: center;
 }
 .wrap {
@@ -49,6 +49,9 @@ body {
 }
 .flex-row {
   flex-direction: row;
+}
+.padding {
+  padding: 1rem;
 }
 
 /* POTION AND MAIN STYLES BELOW*/
@@ -58,6 +61,12 @@ main {
   margin-top: 10rem;
 }
 
+.error {
+  width: 100%;
+  height: 70rem;
+  display: none;
+}
+
 .dryck {
   width: auto;
   height: 15rem;
@@ -65,7 +74,7 @@ main {
 }
 
 .textdiv {
-  text-shadow: 5px 5px 10px rgb(93, 14, 146);
+  text-shadow: 5px 5px 10px rgb(6, 156, 119);
 }
 
 .fadein {
@@ -104,24 +113,24 @@ main {
 }
 
 .kanin {
-  animation-name: dot;
-  animation: dot 20s infinite;
+  animation-name: movingBunny;
+  animation: movingBunny 20s infinite;
   position: relative;
   height: 10rem;
   width: auto;
 }
 
-@keyframes dot {
+@keyframes movingBunny {
   0% {
     top: 100px;
     left: 200px;
   }
   25% {
-    top: 730px;
+    top: 800px;
     left: 200px;
   }
   50% {
-    top: 730px;
+    top: 800px;
     left: 1400px;
   }
   75% {
@@ -141,18 +150,18 @@ main {
 
 @keyframes colorchange {
   0% {
-    background-color: rgb(17, 221, 170);
+    background-color: rgb(125, 2, 173);
   }
   25% {
-    background-color: rgb(36, 197, 57);
+    background-color: rgb(51, 5, 95);
   }
   50% {
-    background-color: rgb(224, 56, 224);
+    background-color: rgb(3, 17, 99);
   }
   75% {
-    background-color: rgb(226, 28, 44);
+    background-color: rgb(1, 52, 77);
   }
   100% {
-    background-color: rgb(223, 211, 45);
+    background-color: rgb(66, 2, 56);
   }
 }

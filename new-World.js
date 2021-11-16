@@ -11,11 +11,14 @@ function main2(){
 
 function addEventListeners() {
 
-    const btn = document.getElementById("btn");
+        const btn = document.getElementById("btn");
         btn.onclick = solutionForm
     
         const bollen = document.getElementById("bollen");
         bollen.onclick = showForm;
+        
+        const musicButton = document.getElementById("music-button")
+        musicButton.onclick = playMusic;
 
 }
 
@@ -38,7 +41,7 @@ function solutionForm() {
     for (const answer of RightAnswer){
        if (answer === searchTerm) {
        isanswerFound = true;
-       alert("Korrekt!")
+       ShowAndHide()
        break;
        }
     }
@@ -54,6 +57,19 @@ function solutionForm() {
 
 function showKitten() { 
     const kitten = document.getElementById("kitten")
-    kitten.style.display = "block";
-    
+    kitten.style.display = "block"; 
+}
+
+function playMusic() {
+let audio = new Audio("Bilder/narnia-music.mp3");
+audio.play();
+}
+
+
+function ShowAndHide(){
+    const hide = document.querySelector("main");
+    const show = document.getElementById("kittendiv");
+    hide.style.visibility = "hidden";
+    show.style.visibility = "visible";  
+     
 }

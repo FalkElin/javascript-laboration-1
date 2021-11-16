@@ -1,4 +1,4 @@
-//anropa vår main funktion när sidan laddat
+
 window.onload = main
 
 
@@ -21,7 +21,7 @@ document.getElementById("bollen").style.cursor = "pointer";
 
 
 function AnswerQuestion() {
-    const searchTerm = prompt("I ett fyrkantigt rum finns en katt i varje hörn av rummet. Framför varje katt finns 3 katter. Hur många katter finns det i rummet? Svara i siffor.")
+    const searchTerm = prompt("I ett fyrkantigt rum finns en katt i varje hörn av rummet. Framför varje katt finns 3 katter. Hur många katter finns det i rummet? Svara i siffror.")
     
     let isanswerFound = false;
 
