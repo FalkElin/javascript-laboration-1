@@ -47,6 +47,10 @@ html {
   padding: 1rem;
 }
 
+.cursorpointer {
+  cursor: pointer;
+}
+
 body {
   font-family: helvetica;
   min-height: 100%;
@@ -58,11 +62,36 @@ body {
 main {
   display: flex;
 }
+
 .balto {
   position: absolute;
-  height: 20rem;
   bottom: 0;
   left: 0;
+  height: 20rem;
+}
+
+.baltotext {
+  position: absolute;
+  bottom: 5rem;
+  left: 12rem;
+  display: none;
+  background-color: rgb(27, 104, 148);
+  color: white;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: solid white;
+}
+
+.lunatext {
+  position: absolute;
+  bottom: 8rem;
+  right: 15rem;
+  background-color: rgb(27, 104, 148);
+  color: white;
+  padding: 1rem;
+  border: solid white;
+  border-radius: 3rem;
+  display: none;
 }
 
 .luna {
@@ -80,7 +109,7 @@ main {
   background-color: rgb(103, 75, 206);
   border-radius: 1rem;
   border: solid white;
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 
 .moses {
@@ -96,7 +125,47 @@ main {
   font-size: 1rem;
 }
 
-.bollen2 {
+.mosestext {
+  top: 8rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  width: fit-content;
+  background-color: rgb(27, 104, 148);
+  color: white;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: solid white;
+  display: none;
+}
+
+.rihanna {
+  height: 8rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 12rem;
+  margin-left: 20rem;
+}
+
+.rihannatext {
+  position: absolute;
+  bottom: 20rem;
+  left: 12rem;
+  right: 0;
+  width: fit-content;
+  background-color: rgb(27, 104, 148);
+  color: white;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: solid white;
+  display: none;
+}
+
+.albert {
   height: 15rem;
   position: absolute;
   bottom: 0;
@@ -107,12 +176,24 @@ main {
   display: flex;
 }
 
+.alberttext {
+  position: absolute;
+  bottom: 20rem;
+  left: 40rem;
+  background-color: rgb(27, 104, 148);
+  color: white;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: solid white;
+  display: none;
+}
+
 .form {
   position: absolute;
   top: 0;
-  margin-left: 11rem;
-  margin-top: 3rem;
-  background-color: rgb(66, 23, 219);
+  margin-left: 9rem;
+  margin-top: 5rem;
+  background-color: rgb(233, 33, 149);
   padding: 1rem;
   color: white;
   border: solid white;
@@ -135,20 +216,49 @@ main {
 }
 
 .music-button {
-  background-color: rgb(255, 13, 154);
+  background-color: rgb(30, 51, 146);
   padding: 0.4rem;
-  border: solid rgb(110, 0, 101);
-  border-radius: 1rem;
+  width: 7rem;
+  border: solid rgb(255, 255, 255);
+  border-radius: 0.5rem;
   color: white;
   top: 0;
   left: 0;
   right: 0;
-  margin: 0.3rem;
+  margin-top: 3rem;
   font-size: 1rem;
   position: absolute;
 }
 
-.music-button:hover {
+.help-button {
+  background-color: rgb(9, 175, 64);
+  padding: 0.4rem;
+  border: solid rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  position: absolute;
+  width: 7rem;
+}
+
+.hinttext {
+  top: 0.2rem;
+  left: 7.1rem;
+  background-color: rgb(9, 175, 64);
+  color: white;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: solid white;
+  position: absolute;
+  display: none;
+}
+
+.music-button:hover,
+.help-button:hover {
   color: rgb(174, 0, 255);
   cursor: pointer;
 }
