@@ -2,7 +2,7 @@
 window.onload = main
 
 
-const RightAnswers = ["4"]
+let RightAnswers = ["3", "tre"]
 
 function main(){
     addEventListeners();
@@ -14,25 +14,28 @@ const secretDoor = document.getElementById("secretDoor")
 secretDoor.onclick = AnswerQuestion;
 document.getElementById("secretDoor").style.cursor = "pointer";
 
+
+
+
 const bollen = document.getElementById("bollen")
 bollen.onclick = showCatText
 document.getElementById("bollen").style.cursor = "pointer";
+
+
 }
 
 
 function AnswerQuestion() {
-    const searchTerm = prompt("I ett fyrkantigt rum finns en katt i varje hörn av rummet. Framför varje katt finns 3 katter. Hur många katter finns det i rummet? Svara i siffror.")
+    let searchTerm = prompt("Elin älskar katter och har några som husdjur. Alla utom två är helt vita. Alla utom två är helt svarta. Alla utom två är helt bruna. Hur många katter har Elin?").toLowerCase();
     
     let isanswerFound = false;
 
     for (const answer of RightAnswers){
        if (answer === searchTerm) {
        isanswerFound = true;
-       alert("Korrekt!")
        break;
        }
     }
-
     if (!isanswerFound) {
         alert("Fel, testa igen!")
         AnswerQuestion()

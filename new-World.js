@@ -2,7 +2,7 @@
 window.onload = main2
 
 //Svar på gåtan 
-const RightAnswer = ["balto"]
+const RightAnswer = ["luna", "Luna"]
 
 //anropar funktion
 function main2(){
@@ -52,7 +52,6 @@ function showForm() {
 //kontrollerar svaret i svarsformuläret med hjälp av en array, skickar ut prompt om svaret är fel och anropar ny funktion om svaret är rätt
 function solutionForm() {
     const searchTerm = document.getElementById("svar").value;
-    
     let isanswerFound = false;
 
     for (const answer of RightAnswer){
@@ -74,7 +73,7 @@ function solutionForm() {
 function playMusic() {
 let audio = new Audio("Bilder/mysterymusic.mp3");
 audio.play();
-audio.volume= .4;
+audio.volume= 0.2;
 }
 
 //Visar kattunge med text om gåtan är löst

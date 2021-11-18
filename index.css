@@ -8,7 +8,7 @@ html {
 body {
   font-family: helvetica;
   min-height: 100%;
-  color: rgb(0, 248, 227);
+  color: rgb(255, 255, 255);
   background-color: rgb(30, 75, 50);
   overflow: hidden;
 }
@@ -58,7 +58,7 @@ body {
 
 main {
   height: 30rem;
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 .error {
@@ -67,14 +67,21 @@ main {
   display: none;
 }
 
+.blackcat {
+  position: absolute;
+  left: 2rem;
+  bottom: 0;
+  height: 10rem;
+}
+
 .dryck {
-  width: auto;
   height: 15rem;
   margin: 3.5rem;
+  cursor: pointer;
 }
 
 .textdiv {
-  text-shadow: 5px 5px 10px rgb(6, 156, 119);
+  text-shadow: 5px 5px 10px rgb(148, 148, 148);
 }
 
 .fadein {
@@ -150,18 +157,18 @@ main {
 
 @keyframes colorchange {
   0% {
-    background-color: rgb(125, 2, 173);
+    background-color: #250050;
   }
   25% {
-    background-color: rgb(51, 5, 95);
+    background-color: rgb(0, 0, 0);
   }
   50% {
-    background-color: rgb(3, 17, 99);
+    background-color: #00124d;
   }
   75% {
-    background-color: rgb(1, 52, 77);
+    background-color: rgb(0, 0, 0);
   }
   100% {
-    background-color: rgb(66, 2, 56);
+    background-color: #310029;
   }
 }
