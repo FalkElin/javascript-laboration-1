@@ -56,7 +56,7 @@ html {
 body {
   font-family: helvetica;
   min-height: 100%;
-  background-image: url(/Bilder/mushy.jpeg);
+  background-image: url(../bilder/mushy.jpeg);
   background-position: bottom;
   background-size: cover;
   overflow: hidden;
