@@ -56,10 +56,11 @@ html {
 body {
   font-family: helvetica;
   min-height: 100%;
-  background-image: url(../bilder/mushy.jpg);
+  background-image: url(../Bilder/mushy.jpg);
   background-position: bottom;
   background-size: cover;
   overflow: hidden;
+  visibility: visible;
 }
 main {
   display: flex;
