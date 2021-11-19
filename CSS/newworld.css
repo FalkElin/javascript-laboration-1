@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+
+/* REUSABLE STYLES BELOW*/
+
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-right {
+  justify-content: right;
+}
+.justify-left {
+  justify-content: left;
+}
+.grow {
+  flex: 1;
+}
+.column {
+  flex-direction: column;
+}
+.fullwidth {
+  width: 100%;
+}
+.text-align-center {
+  text-align: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.flex-row {
+  flex-direction: row;
+}
+.padding {
+  padding: 1rem;
+}
+
+.cursorpointer {
+  cursor: pointer;
+}
+
+/* Body styles below */
+body {
+  font-family: helvetica;
+  min-height: 100%;
+  background-image: url(/Bilder/mushy.jpeg);
+  background-position: bottom;
+  background-size: cover;
+  overflow: hidden;
+}
+main {
+  display: flex;
+}
+
+/* Cat styles below */
+
+.balto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 20rem;
+}
+
+.baltotext {
+  position: absolute;
+  bottom: 5rem;
+  left: 12rem;
+  display: none;
+  background-color: rgb(27, 104, 148);
+  color: white;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: solid white;
+}
+
+.lunatext {
+  position: absolute;
+  bottom: 8rem;
+  right: 15rem;
+  background-color: rgb(27, 104, 148);
+  color: white;
+  padding: 1rem;
+  border: solid white;
+  border-radius: 3rem;
+  display: none;
+}
+
+.luna {
+  position: absolute;
+  height: 30rem;
+  bottom: -7rem;
+  right: -5rem;
+}
+
+.bollen {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 10rem;
+  background-color: rgb(103, 75, 206);
+  border-radius: 1rem;
+  border: solid white;
+  margin-top: 6rem;
+}
+
+.moses {
+  position: absolute;
+  height: 6rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 12rem;
+  padding-right: 5rem;
+  display: flex;
+  font-size: 1rem;
+}
+
+.mosestext {
+  top: 8rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  width: fit-content;
+  background-color: rgb(27, 104, 148);
+  color: white;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: solid white;
+  display: none;
+}
+
+.rihanna {
+  height: 6rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 14rem;
+  margin-left: 18rem;
+}
+
+.rihannatext {
+  position: absolute;
+  bottom: 20rem;
+  left: 12rem;
+  right: 0;
+  width: fit-content;
+  background-color: rgb(27, 104, 148);
+  color: white;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: solid white;
+  display: none;
+}
+
+.albert {
+  height: 12rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 9rem;
+  margin: auto;
+  display: flex;
+}
+
+.alberttext {
+  position: absolute;
+  bottom: 20rem;
+  left: 40rem;
+  background-color: rgb(27, 104, 148);
+  color: white;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: solid white;
+  display: none;
+}
+
+/* Hidden form below */
+.form {
+  position: absolute;
+  top: 0;
+  margin-left: 9rem;
+  margin-top: 5rem;
+  background-color: rgb(233, 33, 149);
+  padding: 1rem;
+  color: white;
+  border: solid white;
+  border-radius: 1rem;
+  display: none;
+}
+.form div {
+  padding: 0.7rem;
+}
+
+/* Hidden kitten styles */
+
+.kitten {
+  height: 25rem;
+}
+
+.kittendiv {
+  height: 100vh;
+  width: 100%;
+  background-color: cadetblue;
+  visibility: hidden;
+  background-image: url(/Bilder/land.jpeg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+/* Button styles below */
+
+.music-button {
+  background-color: rgb(30, 51, 146);
+  padding: 0.4rem;
+  width: 7rem;
+  border: solid rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 3rem;
+  font-size: 1rem;
+  position: absolute;
+}
+
+.help-button {
+  background-color: rgb(9, 175, 64);
+  padding: 0.4rem;
+  border: solid rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  position: absolute;
+  width: 7rem;
+}
+
+.hinttext {
+  top: 0.2rem;
+  left: 7.1rem;
+  background-color: rgb(9, 175, 64);
+  color: white;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: solid white;
+  position: absolute;
+  display: none;
+}
+
+.music-button:hover,
+.help-button:hover {
+  color: rgb(174, 0, 255);
+  cursor: pointer;
+}

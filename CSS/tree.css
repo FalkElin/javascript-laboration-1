@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+
+/* Body styles below */
+
+body main {
+  font-family: helvetica;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/Bilder/trippyforest.jpeg);
+  background-size: cover;
+}
+
+/* Main styles below */
+
+.träd {
+  height: 68rem;
+  width: auto;
+}
+
+.secretDoor {
+  position: absolute;
+  height: 6rem;
+  padding-bottom: 21rem;
+  padding-right: 6rem;
+  opacity: 0;
+}
+
+.bollen {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  height: 25rem;
+}
+
+.crazyCatText {
+  position: absolute;
+  border-radius: 4rem;
+  border: solid rgb(245, 183, 102);
+  background-color: rgba(50, 20, 187, 0.795);
+  color: azure;
+  padding: 2rem;
+  font-weight: 200;
+  font-size: 2rem;
+  top: 10rem;
+  left: 5rem;
+  display: block;
+  width: 25rem;
+}
+
+.text {
+  position: absolute;
+  border-top-left-radius: 7rem;
+  border-top-right-radius: 7rem;
+  border-bottom-left-radius: 7rem;
+  border: solid rgb(245, 183, 102);
+  width: 23rem;
+  background-color: rgba(50, 20, 187, 0.795);
+  padding: 4rem;
+  bottom: 0;
+  color: azure;
+  font-weight: 100;
+  left: 0;
+  margin-bottom: 19rem;
+  margin-left: 15rem;
+  display: none;
+}
+
+.catText h1,
+p,
+h3 {
+  margin: 1rem;
+}
