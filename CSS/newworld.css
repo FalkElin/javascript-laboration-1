@@ -60,7 +60,6 @@ body {
   background-position: bottom;
   background-size: cover;
   overflow: hidden;
-  visibility: visible;
 }
 main {
   display: flex;
